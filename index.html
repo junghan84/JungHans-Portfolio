@@ -1,102 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Portfolio</title>
-        <meta charset="UTF-8">
-        <meta lang="en">
-        <meta name="portfolio" content="JungHan's showcase">
-        <link rel="stylesheet" type="reset/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">  
-        <script src="https://kit.fontawesome.com/1b3c63b5a1.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JungHan's Portfolio</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
-        <nav class ="navbar">
-            <div clas="navbar_logo">
-              <i class="fa-thin fa-alien"></i>
-              <a href="">JungHan</a>    
+        <!-- header and nav section start -->
+        <header>
+            <div><h1>JungHan Seo</h1></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="./assets/documents/EthanSeoResume.pdf" target="_blank">My Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- hero image section start -->
+        <section class="hero">
+            <div>
+                <img src="./assets/images/me.jpg" alt="An image of me">
             </div>
+            <div class="quote">
+                <blockquote>
+                    <p id="quote-text">
+                        Together  We can.
+                    </p>
+                    <p>
+                        Cool the Planet<br>
+                    </p>
+                </blockquote>
+            </div>
+        </section>
 
-            <ul class="navbar_menu">
-                <li><a href="">About Me</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact Me</a></li>
-                <li><a href="">Resume</a></li>
-            </ul>
-        </nav>
-
-            <!--banner-->
-        <div class="logo">
-         <h3>Cool subtitle here!</h3>
-        </div>
-        <div class="section">
-          <div class="row">
-            <h3 class="aside">About Me</h3>     
-          </div>    
-          <p class="article">I don’t know much about being a Programming developer but I do know the excitement that comes after developing a new project. I have the determination and motivation to learn as much as I can.<br><br><br>Although I don’t speak English perfectly, I am trying to collaborate with others. In the future I hope to use my newfound skills to support other people in reaching their goals</p>
-         
-          </div>
-        </div>
-      
-        <div class="section">
-          <div class="row">
-            <h3 class="aside">Work</h3>     
-        </div> 
-         <div class="ft">
-          <div class="box feature">
-            <div class="box-inner">
-            <h2 class="box_content">
-              <a href="https://ccaitano.github.io/aux-nudge/">Github</a>
-            </h2>
-           
-          </div>
-        </div>
-        <div class="box">
-            <div class="box-inner">
-            <h2>Title2</h2>
+        <!-- about me section start -->
+        <section id="about-me" class="about-me">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
             
+            <div>
+                <p>
+                  I don’t know much about being a Programming developer but I do know the excitement that comes after developing a new project. I have the determination and motivation to learn as much as I can
+                    <br><br>
+                    Although I don’t speak English perfectly, I am trying to collaborate with others. In the future I hope to use my newfound skills to support other people in reaching their goals
+                </p>
             </div>
-        </div>
-        <div class="box">
-            <div class="box-inner">
-            <h2>Title3</h2>
-            
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-inner">
-            <h2>Title4</h2>
-            
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-inner">
-            <h2>Title5</h2>            
-            </div>
-        </div>    
-        </div>
-      </div>
-      
-      <div class="footer">
-        <div class="row">
-          <h3 class="aside">Contact Me</h3>     
-        </div>    
-        <nav class="footer_nav">
-          <a href="">555.555</a>
-          <a href="#">website.com</a>
-          <a href="http://www.github.com/">Github</a>
-          <a href="https://www.twitter.com/">Twitter</a>
-          <a href="https://www.spotify.com/us">Spotify</a>        
-      </nav>  
-        </div>
-      </div>
-      
+        </section>
 
-      
-      
-      </main>
-      
-      
+        <!-- my work section start -->
+        <section id="my-work" class="my-work">
+            <div class="title"><h2>My Work</h2></div>
+            <div class = "projects-grid-wrapper">
+                <div class="projects-grid">
 
-     
+                    <a href="https://junghan84.github.io/Note_Taker/" target="_blank" class="project note-taker">  
+                      <!--project run-buddy  project robot-gladiators Prestige Worldwide  Fallout 4 Character Manager-->
+                        <div class="project-label">
+                            <h3>Note Taker</h3>
+                            <p>HTML/CSS/JSON</p>
+                        </div>
+                    </a>
+                    <a href="https://junghan84.github.io/weather_Dashborder/" target="_blank" class="project weather-dashborder">
+                        <div class="project-label">
+                            <h3>Robot Gladiators</h3>
+                            <p>HTML/CSS/JSON/API</p>
+                        </div>
+                    </a>
+                    <a href="https://junghan84.github.io/NoSQL-Social-Network-API/" target="_blank" class="project nosql-social-network-api">
+                        <div class="project-label">
+                            <h3>NoSQL-Social-Network-API</h3>
+                            <p>Node.js/Mysql</p>
+                        </div>
+                    </a>
+                    <a href="https://junghan84.github.io/-Progressive-Web-Applications-PWA-Text-Editor/" target="_blank" class="project progressive-web-applications-pwa-text-editor">
+                        <div class="project-label">
+                            <h3>Progressive-Web-Applications-PWA-Text-Editor</h3>
+                            <p>JavaScript/Webpack/IndexDB/Node.js/Express</p>
+                        </div>
+                    </a>
+                    <a href="https://community-vision.herokuapp.com/" target="_blank"  class="project community-vision">
+                        <div class="project-label">
+                            <h3>community-vision</h3>
+                            <p>React/Express/MongoDB/Cloudinary Widget</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact info section -->
+        <footer id="contact-me">
+            <div class="title"><h2>Contact Me</h2></div>
+            <div class="content-wrapper">
+                <div id="contact-list">
+                    <ul>
+                        <li>
+                            <a href="mailto:junghanseo84@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/junghan84" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="hwww.linkedin.com/in/junghan-seo-994996138" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <p>(555) 555-5555</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
+</html>
